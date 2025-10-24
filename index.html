@@ -26,7 +26,7 @@
 </head>
 <body class=" h-[200vh] bg-[#FAF8F5]">
     
-    <header class="shadow-sm " style="background-color: transparent; backdrop-filter: blur(10px); position: fixed; width: 100%; height: 13vh; display: flex; justify-content: space-between; align-items: center; padding: 0 4rem; margin-top: 0; z-index: 50; ">
+    <header class="shadow-sm " style="background-color: transparent; backdrop-filter: blur(10px); position: fixed; width: 100%; height: 13vh; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; margin-top: 0; z-index: 50; ">
   <img src="imgs/logo.png" alt="" class="h-[120px]">
   
   <!-- Icon (menu/close) -->
@@ -34,8 +34,8 @@
 
   <!-- Navigation -->
   <ul id="burger" class="lg:flex gap-[1.5rem] lg:ml-[300px] lg:static absolute  w-full left-0 lg:py-0 py-4 lg:pl-0 pl-7 
-     lg:opacity-100 opacity-0 top-[-400px] lg:top-0 transition-all ease-in-out duration-300 md:mt-[60px]
-     lg:bg-transparent bg-white/40 lg:backdrop-blur-0 backdrop-blur-md">
+     lg:opacity-100 opacity-0 top-[-400px] lg:top-0 transition-all ease-in-out duration-300 md:mt-[60px] lg:m-0
+     lg:bg-transparent  lg:backdrop-blur-0 bg-white">
     <li><a class="text-black" href="index.html">Bogga Hore</a></li>
     <li><a class="text-gray-600" href="news.so.html">Wararka Soomaliya</a></li>
     <li><a class="text-gray-600" href="news.du.html">Wararka Aduunka</a></li>
@@ -45,80 +45,82 @@
 </header>
 
 
-<!-- 
+
     <section class=" pt-[140px]">
         <h1 class=" text-[3.3rem] font-bold text-center">WARARKA</h1>
-        <p class=" text-center text-[20px] text-gray-600">Wararka ugu dambeeyay ee Soomaaliya iyo adduunka. Xog sax ah oo la hubo.</p>
+        <p class=" text-center lg:text-[20px] text-[15px] text-gray-600">Wararka ugu dambeeyay ee Soomaaliya iyo adduunka. Xog sax ah oo la hubo.</p>
 
 
         <div class=" flex justify-center mt-[30px]">
-        <div class="w-[90%] h-[70vh] bg-white rounded-tr-sm rounded-br-sm rounded-bl-2xl rounded-tl-2xl flex items-center shadow-sm ">
-            <img src="imgs/img meet.jpg" alt="" class="h-[100%] w-[50%] rounded-tl-sm rounded-bl-sm">
-            <div class=" ml-[20px]">
+
+        <div class="lg:w-[90%] w-[90%] h-[70vh] md:h-[55vh] bg-white rounded-tr-sm rounded-br-sm rounded-bl-2xl rounded-tl-2xl lg:flex items-center shadow-sm ">
+            <img src="imgs/img meet.jpg" alt="" class="lg:h-[100%] lg:w-[50%] h-[50%] w-[100%] rounded-tl-sm rounded-bl-sm">
+            <div class=" ml-[20px] lg:mt-0 mt-[30px] ">
                 <div class=" flex gap-[9px]">
                     <p class=" bg-[#C0C0C0] w-[80px] h-[20px] text-[13px]  rounded-[10px] text-center">Siyaasad</p>
                     <p class=" text-[13px]">Janaayo 15, 2025</p>
                 </div>
 
-                <a href=""><h1 class=" text-[2rem] font-bold hover:text-[#701705] hover:duration-300 ease-in-out">Madaxweynaha Soomaaliya <br> oo kulan muhiim ah la qaatay <br> hoggaamiyeyaasha gobolada</h1></a>
+                <a href=""><h1 class=" lg:text-[2rem] text-[1.2rem] md:text-[1.7rem] font-bold hover:text-[#701705] hover:duration-300 ease-in-out">Madaxweynaha Soomaaliya <br> oo kulan muhiim ah la qaatay <br> hoggaamiyeyaasha gobolada</h1></a>
 
                 <p class=" mt-[9px] text-gray-500">Kulankan oo ka dhacay Villa Somalia ayaa looga hadlay arrimaha amniga <br> iyo horumarinta dhaqaalaha dalka.</p>
 
-                <div class=" flex justify-between items-center mt-[10px]">
+                <div class=" flex lg:justify-between justify-center lg:gap-0 gap-[3rem] md:gap-[25rem] items-center mt-[10px]">
                     <p class=" text-gray-500 ">Wararka Soomaaliya</p>
                     <a href=""><p class=" text-gray-500">Akhri dhamaan<i class="fi fi-rr-arrow-right"></i></p></a>
                 </div>
             </div>
         </div>
+
         </div>
 
 
 
-        <div class=" flex justify-between items-center px-[2rem] mt-[40px]">
+        <div class=" lg:flex md:flex text-center justify-between items-center px-[2rem] mt-[40px]">
             <h1 class=" text-[1.5rem] font-bold">Wararka ugu Dambeeyay</h1>
-            <a href=""><button class=" bg-white shadow-sm w-[150px] h-[35px] rounded-sm text-center text-[14px]">Dhamaan Wararka</button></a>
+            <a href=""><button class=" lg:mt-0 mt-[10px] bg-white shadow-sm w-[150px] h-[35px] rounded-sm text-center text-[14px]">Dhamaan Wararka</button></a>
         </div>
 
 
 
+        
+        <div class=" lg:flex lg:justify-center lg:gap-[1rem] mt-[40px]">
 
-        <div class=" flex justify-center gap-[1.7rem] mt-[40px]">
-
-            <div class=" bg-white w-[380px] h-[80vh]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
-                <img src="imgs/img2.jpg" alt="" class=" h-[230px] w-[380px] rounded-tr-sm rounded-tl-sm" >
+            <div class=" bg-white lg:w-[380px] w-[90%] h-[56vh] lg:h-[80vh] md:w-[90%] md:h-[45vh] md:rounded-md lg:mt-0 mt-[20px] lg:ml-[0] ml-[20px] md:ml-[43px]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
+                <img src="imgs/img2.jpg" alt="" class=" lg:h-[230px] h-[230px] lg:w-[380px] w-[100%] md:w-[100%] md:h-[50%] rounded-tr-sm rounded-tl-sm" >
                 <div class=" ml-[20px] mt-[20px]">
                 <div class=" flex gap-[9px]">
                     <p class=" bg-[#C0C0C0] w-[80px] h-[20px] text-[13px]  rounded-[10px] text-center">Dhaqaale</p>
                     <p class=" text-[13px]">Jan 15</p>
                 </div>
 
-                <a href=""><h1 class=" mt-[7px] text-[1rem] font-bold hover:text-[#701705] hover:duration-300 ease-in-out">Dowladda Federaalka oo qorshe cusub u <br> soo bandhigtay horumarinta waddooyinka</h1></a>
+                <a href=""><h1 class=" mt-[7px] lg:text-[1rem] text-[1rem] font-bold hover:text-[#701705] hover:duration-300 ease-in-out">Dowladda Federaalka oo qorshe cusub u <br> soo bandhigtay horumarinta waddooyinka</h1></a>
 
-                <p class=" mt-[9px] text-gray-500 text-[13px]">Qorshahan ayaa ku saabsan dhismaha waddo cusub <br> oo isku xirta magaalooyinka waaweyn.</p>
+                <p class=" mt-[9px] text-gray-500 lg:text-[13px] text-[13px] md:text-[18px]">Qorshahan ayaa ku saabsan dhismaha waddo cusub <br> oo isku xirta magaalooyinka waaweyn.</p>
 
                 <div class=" flex  items-center mt-[13px]">
-                    <p class=" text-gray-500 text-[13px] ">Wararka Soomaaliya</p>
-                    <a href=""><p class=" text-gray-500 text-[13px] ml-[80px]">Akhri dhamaan<i class="fi fi-rr-arrow-right"></i></p></a>
+                    <p class="mt-[9px] text-gray-500 lg:text-[13px] text-[13px] md:text-[18px] ">Wararka Soomaaliya</p>
+                    <a href=""><p class=" text-gray-500 text-[13px] lg:ml-[80px] ml-[80px] md:ml-[280px]">Akhri dhamaan<i class="fi fi-rr-arrow-right"></i></p></a>
                 </div>
             </div>
             </div>
 
 
-            <div class=" bg-white w-[380px] h-[80vh]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
-                <img src="imgs/img3.jpg" alt="" class=" h-[230px] w-[380px] rounded-tr-sm rounded-tl-sm" >
+            <div class=" bg-white lg:w-[380px] w-[90%] h-[60vh] lg:h-[80vh] md:w-[90%] md:h-[50vh] md:rounded-md lg:mt-0 mt-[20px] lg:ml-[0] ml-[20px] md:ml-[43px]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
+                <img src="imgs/img3.jpg" alt="" class="  lg:h-[230px] h-[230px] lg:w-[380px] w-[100%] md:w-[100%] md:h-[50%] rounded-tr-sm rounded-tl-sm" >
                 <div class=" ml-[20px] mt-[20px]">
                 <div class=" flex gap-[9px]">
                     <p class=" bg-[#C0C0C0] w-[80px] h-[20px] text-[13px]  rounded-[10px] text-center">Amni</p>
                     <p class=" text-[13px]">Jan 14</p>
                 </div>
 
-                <a href=""><h1 class=" mt-[7px] text-[1rem] font-bold hover:text-[#701705] hover:duration-300 ease-in-out">Kooxda Al-Shabaab oo weeraro <br> ku qaaday degmooyin ka tirsan <br> gobolka Shabeellaha Hoose</h1></a>
+                <a href=""><h1 class=" mt-[7px] lg:text-[1rem] text-[1rem] font-bold hover:text-[#701705] hover:duration-300 ease-in-out">Kooxda Al-Shabaab oo weeraro <br> ku qaaday degmooyin ka tirsan <br> gobolka Shabeellaha Hoose</h1></a>
 
-                <p class=" mt-[9px] text-gray-500 text-[13px]">Ciidamada dowladda ayaa ka horyimid weerarkan oo <br> dhacay saacadihii hore.</p>
+                <p class=" mt-[9px] text-gray-500 lg:text-[13px] text-[13px] md:text-[18px]">Ciidamada dowladda ayaa ka horyimid weerarkan oo <br> dhacay saacadihii hore.</p>
 
                 <div class=" flex  items-center mt-[13px]">
                     <p class=" text-gray-500 text-[13px] ">Wararka Soomaaliya</p>
-                    <a href=""><p class=" text-gray-500 text-[13px] ml-[80px]">Akhri dhamaan<i class="fi fi-rr-arrow-right"></i></p></a>
+                    <a href=""><p class=" text-gray-500 text-[13px] lg:ml-[80px] ml-[80px] md:ml-[280px]">Akhri dhamaan<i class="fi fi-rr-arrow-right"></i></p></a>
                 </div>
             </div>
             </div>
@@ -126,50 +128,50 @@
 
 
 
-            <div class=" bg-white w-[380px] h-[80vh]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
-                <img src="imgs/img1.jpg" alt="" class=" h-[230px] w-[380px] rounded-tr-sm rounded-tl-sm" >
+            <div class=" bg-white lg:w-[380px] w-[90%] h-[56vh] lg:h-[80vh] md:w-[90%] md:h-[50vh] md:rounded-md lg:mt-0 mt-[20px] lg:ml-[0] ml-[20px] md:ml-[43px]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
+                <img src="imgs/img1.jpg" alt="" class=" lg:h-[230px] h-[230px] lg:w-[380px] w-[100%] md:w-[100%] md:h-[50%] rounded-tr-sm rounded-tl-sm" >
                 <div class=" ml-[20px] mt-[20px]">
                 <div class=" flex gap-[9px]">
                     <p class=" bg-[#C0C0C0] w-[80px] h-[20px] text-[13px]  rounded-[10px] text-center">Dhaqaale</p>
                     <p class=" text-[13px]">Jan 15</p>
                 </div>
 
-                <a href=""><h1 class=" mt-[7px] text-[1rem] font-bold hover:text-[#701705] hover:duration-300 ease-in-out">Bangiga Dhexe ee Soomaaliya oo kordhiyay heerka dulsaarka lacagta</h1></a>
+                <a href=""><h1 class=" mt-[7px] lg:text-[1rem] text-[1rem] font-bold hover:text-[#701705] hover:duration-300 ease-in-out">Bangiga Dhexe ee Soomaaliya oo kordhiyay heerka dulsaarka lacagta</h1></a>
 
-                <p class=" mt-[9px] text-gray-500 text-[13px]">Tallaabadan ayaa la qaadayaa si loo xakameeyo sicir-bararka dalka ka jira.</p>
+                <p class=" mt-[9px] text-gray-500 lg:text-[13px] text-[13px] md:text-[18px]">Tallaabadan ayaa la qaadayaa si loo xakameeyo sicir-bararka dalka ka jira.</p>
 
                 <div class=" flex  items-center mt-[13px]">
                     <p class=" text-gray-500 text-[13px] ">Wararka Soomaaliya</p>
-                    <a href=""><p class=" text-gray-500 text-[13px] ml-[80px]">Akhri dhamaan<i class="fi fi-rr-arrow-right"></i></p></a>
+                    <a href=""><p class=" text-gray-500 text-[13px] lg:ml-[80px] ml-[80px] md:ml-[280px]">Akhri dhamaan<i class="fi fi-rr-arrow-right"></i></p></a>
                 </div>
             </div>
             </div>
         </div>
 
 
-        <div class=" flex justify-between items-center px-[2rem] mt-[40px]">
+        <div class=" lg:flex text-center justify-between items-center px-[2rem] mt-[40px]">
             <h1 class=" text-[1.5rem] font-bold">Wararka aduunka</h1>
-            <a href=""><button class=" bg-white shadow-sm w-[150px] h-[35px] rounded-sm text-center text-[14px]">Dhamaan Wararka</button></a>
+            <a href=""><button class=" lg:mt-0 mt-[10px] bg-white shadow-sm w-[150px] h-[35px] rounded-sm text-center text-[14px]">Dhamaan Wararka</button></a>
         </div>
 
 
-        <div class="flex justify-center gap-[1rem] mt-[40px]">
+        <div class="lg:flex justify-center gap-[1rem] mt-[40px] lg:mx-[4rem] ">
 
-            <div class=" w-[600px] h-[60vh] rounded-sm shadow-sm hover:shadow-xl duration-300" style=" background-image: url(imgs/africa\ meet-two.jpg); background-size: cover; background-position: center;">
+            <div class=" lg:mt-0 mt-[20px] lg:ml-[0] ml-[20px]  w-[90%] h-[60vh] lg:w-[600px] lg:h-[60vh] md:h-[40vh] rounded-sm shadow-sm hover:shadow-xl duration-300 md:ml-[35px]" style=" background-image: url(imgs/africa\ meet-two.jpg); background-size: cover; background-position: center;">
                 <div class=" pt-[170px]">
-                <div class=" pl-[20px] pt-[20px] bg-white w-[100%] h-[30vh] rounded-br-sm rounded-bl-sm">
+                <div class=" pl-[20px] pt-[20px] bg-white w-[100%] h-[30vh] md:h-[20vh] rounded-br-sm rounded-bl-sm lg:mt-0 mt-[100px]">
                 <div class=" flex gap-[9px]">
                     <p class=" bg-[#C0C0C0] w-[120px] h-[20px] text-[11px]  rounded-[10px] text-center">Siyaasadda Caalamka</p>
                     <p class=" text-[13px]">Jan 15</p>
                 </div>
 
-                <a href=""><h1 class=" mt-[7px] text-[1rem] font-bold hover:text-[#701705] hover:duration-300 ease-in-out">Madaxweynaha Maraykanka oo shaaciyay <br> qorshe cusub oo ku saabsan Afrika</h1></a>
+                <a href=""><h1 class=" mt-[7px] lg:text-[1rem] text-[1rem] md:text-[1.7rem] font-bold hover:text-[#701705] hover:duration-300 ease-in-out">Madaxweynaha Maraykanka oo shaaciyay <br> qorshe cusub oo ku saabsan Afrika</h1></a>
 
-                <p class=" mt-[9px] text-gray-500 text-[13px]">Qorshahan ayaa diiradda saari doona horumarinta dhaqaalaha iyo amniga gobolka.</p>
+                <p class=" mt-[9px] text-gray-500 lg:text-[13px] text-[13px] md:text-[16px]">Qorshahan ayaa diiradda saari doona horumarinta dhaqaalaha iyo amniga gobolka.</p>
 
                 <div class=" flex  items-center mt-[13px] justify-start">
                     <p class=" text-gray-500 text-[13px] ">Reuters</p>
-                    <a href=""><p class=" text-gray-500 text-[13px] ml-[420px] ">Akhri dhamaan<i class="fi fi-rr-arrow-right"></i></p></a>
+                    <a href=""><p class=" text-gray-500 text-[13px] lg:ml-[280px] ml-[160px] md:ml-[360px] ">Akhri dhamaan<i class="fi fi-rr-arrow-right"></i></p></a>
                 </div>
             </div>
             </div>
@@ -177,21 +179,21 @@
 
 
 
-            <div class=" w-[600px] h-[60vh] rounded-sm shadow-sm hover:shadow-xl duration-300" style=" background-image: url(imgs/africa\ meet.jpg); background-size: cover; background-position: bottom;">
+            <div class=" lg:mt-0 mt-[80px] lg:ml-[0] ml-[20px]  w-[90%] h-[60vh] lg:w-[600px] lg:h-[60vh] md:h-[40vh] rounded-sm shadow-sm hover:shadow-xl duration-300 md:ml-[30px] md:mt-[100px]" style=" background-image: url(imgs/africa\ meet.jpg); background-size: cover; background-position: bottom;">
                 <div class=" pt-[170px]">
-                <div class=" pl-[20px] pt-[20px] bg-white w-[100%] h-[30vh] rounded-br-sm rounded-bl-sm">
+                <div class=" pl-[20px] pt-[20px] bg-white w-[100%] h-[30vh] md:h-[20vh] rounded-br-sm rounded-bl-sm lg:mt-0 mt-[100px]">
                 <div class=" flex gap-[9px]">
                     <p class=" bg-[#C0C0C0] w-[120px] h-[20px] text-[11px]  rounded-[10px] text-center">Siyaasadda Caalamka</p>
                     <p class=" text-[13px]">Jan 15</p>
                 </div>
 
-                <a href=""><h1 class=" mt-[7px] text-[1rem] font-bold hover:text-[#701705] hover:duration-300 ease-in-out">Midowga Afrika oo shirweyne ku qaban doona Addis Ababa</h1></a>
+                <a href=""><h1 class=" mt-[7px] lg:text-[1rem] text-[1rem] md:text-[1.4rem] font-bold hover:text-[#701705] hover:duration-300 ease-in-out">Midowga Afrika oo shirweyne ku qaban doona Addis Ababa</h1></a>
 
-                <p class=" mt-[9px] text-gray-500 text-[13px]">Shirweynan ayaa looga hadli doonaa arrimaha muhiimka ah ee gobolka.</p>
+                <p class=" mt-[9px] text-gray-500 lg:text-[13px] text-[13px] md:text-[16px]">Shirweynan ayaa looga hadli doonaa arrimaha muhiimka ah ee gobolka.</p>
 
                 <div class=" flex  items-center mt-[13px] justify-start">
                     <p class=" text-gray-500 text-[13px] ">BBC</p>
-                    <a href=""><p class=" text-gray-500 text-[13px] ml-[420px] ">Akhri dhamaan<i class="fi fi-rr-arrow-right"></i></p></a>
+                    <a href=""><p class=" text-gray-500 text-[13px] lg:ml-[280px] ml-[160px] ">Akhri dhamaan<i class="fi fi-rr-arrow-right"></i></p></a>
                 </div>
             </div>
             </div>
@@ -199,8 +201,8 @@
         </div>
 
 
-        <div class=" flex justify-center mt-[50px] ">
-        <div class=" bg-[#F7F4F0] w-[95%] h-[40vh] rounded-sm text-center">
+        <div class=" flex justify-center mt-[50px] md:mt-[110px] ">
+        <div class=" bg-[#F7F4F0] lg:w-[95%] w-[95%] md:w-[90%] lg:h-[40vh] h-[40vh] md:h-[20vh] rounded-sm text-center">
             <h1 class=" text-[1.3rem] font-bold pt-[40px]">Ku Biir Warqaddayada</h1>
             <p class=" text-[15px] text-gray-500 mt-[10px]">Hel wararka ugu muhiimsan maalin kasta. Warqaddayada ayaa kuu soo gudbin doonta wararka <br> ugu dambeeyay.</p>
             <a href=""><button class=" bg-[#775831] text-white shadow-sm w-[150px] h-[35px] rounded-sm text-center text-[14px] mt-[10px]">Isdiiwaangali</button></a>
@@ -210,14 +212,14 @@
 
 
 
-    <footer class=" bg-[#F7F4F0] w-[100%] h-[55vh] mt-[100px]">
-        <div class=" flex justify-around items-center">
+    <footer class=" bg-[#F7F4F0] w-[100%] lg:h-[55vh] h-[65vh] mt-[100px]">
+        <div class=" lg:flex justify-around items-center">
         <div class="">
             <img src="imgs/logo.png" alt="" class=" h-[120px]">
-            <p class=" text-[15px] text-gray-500 pl-[25px]">Wararka ugu dambeeyay ee Soomaaliya iyo adduunka. Xog sax ah oo la <br> hubo.</p>
+            <p class=" lg:text-[15px] text-[12px] text-gray-500 pl-[25px]">Wararka ugu dambeeyay ee Soomaaliya iyo adduunka. Xog sax ah oo la <br> hubo.</p>
         </div>
 
-        <div class="">
+        <div class=" lg:ml-0 ml-[20px]">
             <h1 class=" font-bold mt-[30px]">Xiriirka Degdega ah</h1>
             <ul class=" mt-[10px]">
                 <li><a class=" text-gray-500 hover:text-black duration-300 ease-in-out" href="">Wararka Soomaaliya</a></li>
@@ -228,9 +230,9 @@
         </div>
 
 
-        <div class="">
+        <div class=" lg:ml-0 ml-[20px] lg:mt-0 mt-[10px]">
             <h1 class=" font-bold">Xiriir</h1>
-            <ul class=" mt-[10px]">
+            <ul class=" lg:mt-[10px] mt-[5px]">
                 <li><a class=" text-gray-500 hover:text-black duration-300 ease-in-out" href="">Newshupso@gmail.com</a></li>
                 <li><a class=" text-gray-500 hover:text-black duration-300 ease-in-out" href="">+252 61 234 5678</a></li>
                 <li><a class=" text-gray-500 hover:text-black duration-300 ease-in-out" href="">Muqdisho, Soomaaliya</a></li>
@@ -238,14 +240,14 @@
         </div>
         </div>
 
-        <div class=" flex justify-between px-[5rem] text-gray-500 mt-[50px]">
-            <p class=" text-[15px]">&copy;2025 Wararka. Dhammaan xuquuqda way dhowran yihiin.</p>
-            <ul class=" flex gap-[12px]">
+        <div class=" lg:flex justify-between px-[5rem] text-gray-500 lg:mt-[50px] mt-[70px]">
+            <p class=" lg:text-[15px] text-[17px]">&copy;2025 Wararka. Dhammaan xuquuqda way dhowran yihiin.</p>
+            <ul class=" flex lg:gap-[12px] gap-[16px] lg:mt-0 mt-[10px]">
                 <li><a href="">Sirta</a></li>
                 <li><a href="">Shuruudaha</a></li>
             </ul>
         </div>
-    </footer> -->
+    </footer>
 
     <script src="java.js"></script>
 </body>
