@@ -5,29 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewsHub.SO</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <style>
         /* nav {
             background-color: transparent;
             backdrop-filter: blur(2px);
             position: fixed;
         } */
+
+        /* .active {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        } */
     </style>
 </head>
 <body class=" h-[200vh] bg-[#FAF8F5]">
     
-    <header style="  background-color: transparent; backdrop-filter: blur(10px); position: fixed; width: 100%; height: 13vh;  display: flex; justify-content: space-between; align-items: center; padding: 0 4rem; margin-top: 0; " class=" shadow-sm">
-        <img src="imgs/logo.png" alt="" class="h-[120px]">
-        <ul class=" flex gap-[1.5rem]">
-            <li><a class="text-black" href="index.html">Bogga Hore</a></li>
-            <li><a class="text-gray-600" href="news.so.html">Wararka Soomaliya</a></li>
-            <li><a class="text-gray-600" href="news.du.html">Wararka Aduunka</a></li>
-            <li><a class="text-gray-600" href="ra'iyi.html">Ra'iyi</a></li>
-            <li><a class="text-gray-600" href="">Warqada</a></li>
-        </ul>
-    </header>
+    <header class="shadow-sm " style="background-color: transparent; backdrop-filter: blur(10px); position: fixed; width: 100%; height: 13vh; display: flex; justify-content: space-between; align-items: center; padding: 0 4rem; margin-top: 0; z-index: 50; ">
+  <img src="imgs/logo.png" alt="" class="h-[120px]">
+  
+  <!-- Icon (menu/close) -->
+  <ion-icon name="menu" class="text-3xl cursor-pointer lg:hidden" onclick="Menu(this)"></ion-icon>
+
+  <!-- Navigation -->
+  <ul id="burger" class="lg:flex gap-[1.5rem] lg:ml-[300px] lg:static absolute  w-full left-0 lg:py-0 py-4 lg:pl-0 pl-7 
+     lg:opacity-100 opacity-0 top-[-400px] lg:top-0 transition-all ease-in-out duration-300 md:mt-[60px]
+     lg:bg-transparent bg-white/40 lg:backdrop-blur-0 backdrop-blur-md">
+    <li><a class="text-black" href="index.html">Bogga Hore</a></li>
+    <li><a class="text-gray-600" href="news.so.html">Wararka Soomaliya</a></li>
+    <li><a class="text-gray-600" href="news.du.html">Wararka Aduunka</a></li>
+    <li><a class="text-gray-600" href="ra'iyi.html">Ra'iyi</a></li>
+    <li><a class="text-gray-600" href="">Warqada</a></li>
+  </ul>
+</header>
 
 
+<!-- 
     <section class=" pt-[140px]">
         <h1 class=" text-[3.3rem] font-bold text-center">WARARKA</h1>
         <p class=" text-center text-[20px] text-gray-600">Wararka ugu dambeeyay ee Soomaaliya iyo adduunka. Xog sax ah oo la hubo.</p>
@@ -227,6 +245,8 @@
                 <li><a href="">Shuruudaha</a></li>
             </ul>
         </div>
-    </footer>
+    </footer> -->
+
+    <script src="java.js"></script>
 </body>
 </html>
