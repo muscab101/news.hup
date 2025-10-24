@@ -5,10 +5,14 @@
 //         burger.classList.toggle('active');
 // })
 
+// const nav = document.querySelector('#nav')
+
+// nav.addEventListener('click', () => {
+//         list.classList.toggle(nav)
+// })
 
 function Menu(e) {
   const list = document.querySelector('#burger');
-
   if (e.name === 'menu') {
     e.name = 'close';
     list.classList.add('top-[110px]');
