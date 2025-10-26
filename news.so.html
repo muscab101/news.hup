@@ -5,27 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewsHub.SO</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <style>
         /* nav {
             background-color: transparent;
             backdrop-filter: blur(2px);
             position: fixed;
         } */
+
+        /* .active {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        } */
     </style>
 </head>
 <body class=" h-[200vh] bg-[#FAF8F5]">
-    
-    <header style="  background-color: transparent; backdrop-filter: blur(10px); position: fixed; width: 100%; height: 13vh;  display: flex; justify-content: space-between; align-items: center; padding: 0 4rem; margin-top: 0; " class=" shadow-sm">
-        <img src="imgs/logo.png" alt="" class="h-[120px]">
-        <ul class=" flex gap-[1.5rem]">
-            <li><a class="text-gray-600" href="index.html">Bogga Hore</a></li>
-            <li><a class="text-black" href="news.so.html">Wararka Soomaliya</a></li>
-            <li><a class="text-gray-600" href="news.du.html">Wararka Aduunka</a></li>
-            <li><a class="text-gray-600" href="ra'iyi.html">Ra'iyi</a></li>
-            <li><a class="text-gray-600" href="">Warqada</a></li>
-        </ul>
-    </header>
+    <header class="shadow-sm " style="background-color: transparent; backdrop-filter: blur(10px); position: fixed; width: 100%; height: 13vh; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; margin-top: 0; z-index: 50; ">
+  <img src="imgs/logo.png" alt="" class="h-[120px]">
+  
+  <!-- Icon (menu/close) -->
+  <ion-icon name="menu" class="text-3xl cursor-pointer lg:hidden" onclick="Menu(this)"></ion-icon>
+
+  <!-- Navigation -->
+  <ul id="burger" class="lg:flex gap-[1.5rem] lg:ml-[300px] lg:static absolute  w-full left-0 lg:py-0 py-4 lg:pl-0 pl-7 
+     lg:opacity-100 opacity-0 top-[-400px] lg:top-0 transition-all ease-in-out duration-300 md:mt-[60px] lg:m-0
+     lg:bg-transparent  lg:backdrop-blur-0 bg-white lg:shadow-none md:shadow-md shadow-md">
+    <li><a class="text-gray-600" href="index.html">Bogga Hore</a></li>
+    <li><a class="text-black" href="news.so.html">Wararka Soomaliya</a></li>
+    <li><a class="text-gray-600" href="news.du.html">Wararka Aduunka</a></li>
+    <li><a class="text-gray-600" href="ra'iyi.html">Ra'iyi</a></li>
+    <li><a class="text-gray-600" href="">Warqada</a></li>
+  </ul>
+</header>
 
 
     <section class=" pt-[140px]">
@@ -34,31 +50,31 @@
 
         
 
-        <div class=" flex items-center gap-[13px] ml-[20px] mt-[20px]">
-            <div class=" bg-[#775831] w-[150px] h-[33px] text-center rounded-sm text-white flex items-center gap-[7px] pl-[11px] shadow-sm font-medium">
-                <p>Dhammaan</p>
+        <div class=" lg:flex items-center gap-[13px] ml-[20px] mt-[20px]">
+            <div class=" bg-[#775831] lg:w-[150px] lg:h-[33px] w-[90%] h-[40px] text-center rounded-sm text-white flex items-center gap-[7px] pl-[11px] shadow-sm font-medium">
+                <p class="lg:text-[14px] text-[1.2rem] text-center lg:ml-0 ml-[120px]">Dhammaan</p>
                 <p class=" bg-gray-200 w-[21px] h-[20px] text-center text-[13px] rounded-[2px] text-black">8</p>
             </div>
 
-            <div class=" bg-[#FAF8F5] w-[120px] h-[33px] text-center rounded-sm text-black flex items-center gap-[7px] pl-[11px] shadow-sm">
-                <p class="font-medium">Siyaasad</p>
+            <div class=" bg-[#FAF8F5] lg:w-[100px] lg:h-[33px] w-[90%] h-[40px] lg:my-0 my-[13px] text-center rounded-sm text-black flex items-center gap-[7px] pl-[11px] shadow-sm">
+                <p class="font-medium lg:text-[14px] text-[1.2rem] text-center lg:ml-0 ml-[120px]">Siyaasad</p>
                 <p class=" bg-gray-200 w-[21px] h-[20px] text-center text-[13px] rounded-[2px] text-black font-medium">2</p>
             </div>
 
 
-            <div class=" bg-[#FAF8F5] w-[120px] h-[33px] text-center rounded-sm text-black flex items-center gap-[7px] pl-[11px] shadow-sm">
-                <p class="font-medium">Amni</p>
+            <div class=" bg-[#FAF8F5] lg:w-[100px] lg:h-[33px] w-[90%] h-[40px] text-center rounded-sm text-black flex items-center gap-[7px] pl-[11px] shadow-sm">
+                <p class="font-medium lg:text-[14px] text-[1.2rem] text-center lg:ml-0 ml-[120px]">Amni</p>
                 <p class=" bg-gray-200 w-[21px] h-[20px] text-center text-[13px] rounded-[2px] text-black font-medium">2</p>
             </div>
 
 
-            <div class=" bg-[#FAF8F5] w-[120px] h-[33px] text-center rounded-sm text-black flex items-center gap-[7px] pl-[11px] shadow-sm">
-                <p class="font-medium">Dhaqaale</p>
+            <div class=" bg-[#FAF8F5] lg:h-[33px] lg:w-[100px] w-[90%] h-[40px] lg:my-0 my-[13px] text-center rounded-sm text-black flex items-center gap-[7px] pl-[11px] shadow-sm">
+                <p class="font-medium lg:text-[14px] text-[1.2rem] text-center lg:ml-0 ml-[120px]">Dhaqaale</p>
                 <p class=" bg-gray-200 w-[21px] h-[20px] text-center text-[13px] rounded-[2px] text-black font-medium">2</p>
             </div>
             
-            <div class=" bg-[#FAF8F5] w-[120px] h-[33px] text-center rounded-sm text-black flex items-center gap-[7px] pl-[11px] shadow-sm">
-                <p class="font-medium">Bulshada</p>
+            <div class=" bg-[#FAF8F5] lg:h-[33px] lg:w-[100px] w-[90%] h-[40px] text-center rounded-sm text-black flex items-center gap-[7px] pl-[11px] shadow-sm">
+                <p class="font-medium lg:text-[14px] text-[1.2rem] text-center lg:ml-0 ml-[120px]">Bulshada</p>
                 <p class=" bg-gray-200 w-[21px] h-[20px] text-center text-[13px] rounded-[2px] text-black font-medium">2</p>
             </div>
         </div>
@@ -70,12 +86,22 @@
         </div> -->
 
 
+         <section class="pt-20 px-5">
+  <h1 class="text-3xl font-bold text-center text-black">WARARKA SOOMAALIYA</h1>
+  <p class="text-center text-gray-600 mt-2">Wararka ugu dambeeyay ee Soomaaliya</p>
+
+  <div id="news-container" class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-10">
+    <!-- Wararka cusub ayaa halkan ka muuqan doona -->
+  </div>
+</section>
 
 
-        <div class=" flex justify-center gap-[1.7rem] mt-[40px]">
 
-            <div class=" bg-white w-[380px] h-[80vh]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
-                <img src="imgs/img meet.jpg" alt="" class=" h-[230px] w-[380px] rounded-tr-sm rounded-tl-sm" >
+
+        <div class=" lg:flex justify-center gap-[1.7rem] mt-[40px]">
+
+            <div class=" bg-white lg:w-[380px] w-[90%] h-[60vh] lg:h-[80vh] md:w-[90%] md:h-[45vh] md:rounded-md lg:mt-0 mt-[20px] lg:ml-[0] ml-[20px] md:ml-[43px]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
+                <img src="imgs/img meet.jpg" alt="" class="lg:h-[230px] h-[230px] lg:w-[380px] w-[100%] md:w-[100%] md:h-[50%] rounded-tr-sm rounded-tl-sm" >
                 <div class=" ml-[20px] mt-[20px]">
                 <div class=" flex gap-[9px]">
                     <p class=" bg-[#C0C0C0] w-[80px] h-[20px] text-[13px]  rounded-[10px] text-center">Dhaqaale</p>
@@ -94,8 +120,8 @@
             </div>
 
 
-            <div class=" bg-white w-[380px] h-[80vh]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
-                <img src="imgs/img3.jpg" alt="" class=" h-[230px] w-[380px] rounded-tr-sm rounded-tl-sm" >
+            <div class=" bg-white lg:w-[380px] w-[90%] h-[60vh] lg:h-[80vh] md:w-[90%] md:h-[45vh] md:rounded-md lg:mt-0 mt-[20px] lg:ml-[0] ml-[20px] md:ml-[43px]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
+                <img src="imgs/img3.jpg" alt="" class="lg:h-[230px] h-[230px] lg:w-[380px] w-[100%] md:w-[100%] md:h-[50%] rounded-tr-sm rounded-tl-sm" >
                 <div class=" ml-[20px] mt-[20px]">
                 <div class=" flex gap-[9px]">
                     <p class=" bg-[#C0C0C0] w-[80px] h-[20px] text-[13px]  rounded-[10px] text-center">Amni</p>
@@ -116,8 +142,8 @@
 
 
 
-            <div class=" bg-white w-[380px] h-[80vh]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
-                <img src="imgs/img1.jpg" alt="" class=" h-[230px] w-[380px] rounded-tr-sm rounded-tl-sm" >
+            <div class=" bg-white lg:w-[380px] w-[90%] h-[60vh] lg:h-[80vh] md:w-[90%] md:h-[45vh] md:rounded-md lg:mt-0 mt-[20px] lg:ml-[0] ml-[20px] md:ml-[43px]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
+                <img src="imgs/img1.jpg" alt="" class=" lg:h-[230px] h-[230px] lg:w-[380px] w-[100%] md:w-[100%] md:h-[50%] rounded-tr-sm rounded-tl-sm" >
                 <div class=" ml-[20px] mt-[20px]">
                 <div class=" flex gap-[9px]">
                     <p class=" bg-[#C0C0C0] w-[80px] h-[20px] text-[13px]  rounded-[10px] text-center">Dhaqaale</p>
@@ -142,10 +168,10 @@
 
 
 
-        <div class=" flex justify-center gap-[1.7rem] mt-[40px]">
+        <div class=" lg:flex justify-center gap-[1.7rem] mt-[40px]">
 
-            <div class=" bg-white w-[380px] h-[80vh]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
-                <img src="imgs/img2.jpg" alt="" class=" h-[230px] w-[380px] rounded-tr-sm rounded-tl-sm" >
+            <div class=" bg-white lg:w-[380px] w-[90%] h-[59vh] lg:h-[80vh] md:w-[90%] md:h-[45vh] md:rounded-md lg:mt-0 mt-[20px] lg:ml-[0] ml-[20px] md:ml-[43px]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
+                <img src="imgs/img2.jpg" alt="" class=" lg:h-[230px] h-[230px] lg:w-[380px] w-[100%] md:w-[100%] md:h-[50%] rounded-tr-sm rounded-tl-sm" >
                 <div class=" ml-[20px] mt-[20px]">
                 <div class=" flex gap-[9px]">
                     <p class=" bg-[#C0C0C0] w-[80px] h-[20px] text-[13px]  rounded-[10px] text-center">Dhaqaale</p>
@@ -164,8 +190,8 @@
             </div>
 
 
-            <div class=" bg-white w-[380px] h-[80vh]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
-                <img src="imgs/img4.jpg" alt="" class=" h-[230px] w-[380px] rounded-tr-sm rounded-tl-sm" >
+            <div class=" bg-white lg:w-[380px] w-[90%] h-[59vh] lg:h-[80vh] md:w-[90%] md:h-[45vh] md:rounded-md lg:mt-0 mt-[20px] lg:ml-[0] ml-[20px] md:ml-[43px]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
+                <img src="imgs/img4.jpg" alt="" class="lg:h-[230px] h-[230px] lg:w-[380px] w-[100%] md:w-[100%] md:h-[50%] rounded-tr-sm rounded-tl-sm" >
                 <div class=" ml-[20px] mt-[20px]">
                 <div class=" flex gap-[9px]">
                     <p class=" bg-[#C0C0C0] w-[80px] h-[20px] text-[13px]  rounded-[10px] text-center">Bulshada</p>
@@ -186,8 +212,8 @@
 
 
 
-            <div class=" bg-white w-[380px] h-[80vh]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
-                <img src="imgs/img5.jpg" alt="" class=" h-[230px] w-[380px] rounded-tr-sm rounded-tl-sm" >
+            <div class=" bg-white lg:w-[380px] w-[90%] h-[60vh] lg:h-[80vh] md:w-[90%] md:h-[45vh] md:rounded-md lg:mt-0 mt-[20px] lg:ml-[0] ml-[20px] md:ml-[43px]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
+                <img src="imgs/img5.jpg" alt="" class="lg:h-[230px] h-[230px] lg:w-[380px] w-[100%] md:w-[100%] md:h-[50%] rounded-tr-sm rounded-tl-sm" >
                 <div class=" ml-[20px] mt-[20px]">
                 <div class=" flex gap-[9px]">
                     <p class=" bg-[#C0C0C0] w-[80px] h-[20px] text-[13px]  rounded-[10px] text-center">Amni</p>
@@ -212,10 +238,10 @@
 
 
         
-        <div class=" flex justify-start gap-[1.7rem] mt-[40px] ml-[35px]">
+        <div class=" lg:flex justify-start gap-[1.7rem] lg:mt-[40px] lg:ml-[35px]">
 
-            <div class=" bg-white w-[380px] h-[80vh]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
-                <img src="imgs/img7.jpg" alt="" class=" h-[230px] w-[380px] rounded-tr-sm rounded-tl-sm" >
+            <div class=" bg-white lg:w-[380px] w-[90%] h-[56vh] lg:h-[80vh] md:w-[90%] md:h-[45vh] md:rounded-md lg:mt-0 mt-[20px] lg:ml-[0] ml-[20px] md:ml-[43px]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
+                <img src="imgs/img7.jpg" alt="" class=" lg:h-[230px] h-[230px] lg:w-[380px] w-[100%] md:w-[100%] md:h-[50%] rounded-tr-sm rounded-tl-sm" >
                 <div class=" ml-[20px] mt-[20px]">
                 <div class=" flex gap-[9px]">
                     <p class=" bg-[#C0C0C0] w-[80px] h-[20px] text-[13px]  rounded-[10px] text-center">Siyaasad</p>
@@ -234,8 +260,8 @@
             </div>
 
 
-            <div class=" bg-white w-[380px] h-[80vh]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
-                <img src="imgs/img6.jpg" alt="" class=" h-[230px] w-[380px] rounded-tr-sm rounded-tl-sm" >
+            <div class=" bg-white lg:w-[380px] w-[90%] h-[56vh] lg:h-[80vh] md:w-[90%] md:h-[45vh] md:rounded-md lg:mt-0 mt-[20px] lg:ml-[0] ml-[20px] md:ml-[43px]  rounded-sm shadow-sm hover:shadow-xl duration-300 ease-in-out">
+                <img src="imgs/img6.jpg" alt="" class=" lg:h-[230px] h-[230px] lg:w-[380px] w-[100%] md:w-[100%] md:h-[50%] rounded-tr-sm rounded-tl-sm" >
                 <div class=" ml-[20px] mt-[20px]">
                 <div class=" flex gap-[9px]">
                     <p class=" bg-[#C0C0C0] w-[80px] h-[20px] text-[13px]  rounded-[10px] text-center">Bulshada</p>
@@ -325,11 +351,11 @@
 
         <div class=" flex justify-center mt-[50px]">
             <div class=" bg-red-100 w-[90%] h-[20vh] rounded-sm flex  gap-[7px] border-[1px] border-red-500">
-                <div class=" ml-[30px] flex gap-[7px] mt-[19px]">
-                <div class=" bg-red-500 w-[8px] h-[8px] rounded-[50%] mt-[13px] "></div>
+                <div class=" ml-[30px] flex gap-[7px] lg:mt-[19px] mt-[29px]">
+                <div class=" bg-red-500 lg:w-[8px] lg:h-[8px] w-[10px] h-[10px] rounded-[50%] mt-[13px] "></div>
                 <div class="">
-                    <h1 class=" text-[1.4rem] font-semibold">War Degdeg ah</h1>
-                    <p>Raac wararka ugu dambeeyay ee dalka ka socda. Waxaan si joogto ah u cusboonaysiinaa xogta.</p>
+                    <h1 class=" lg:text-[1.4rem] text-[1.1rem] font-semibold">War Degdeg ah</h1>
+                    <p class=" lg:text-none text-[10px] ">Raac wararka ugu dambeeyay ee dalka ka socda. Waxaan si joogto ah u cusboonaysiinaa xogta.</p>
                 </div>
                 
                 </div>
@@ -341,14 +367,14 @@
 
 
 
-    <footer class=" bg-[#F7F4F0] w-[100%] h-[55vh] mt-[50px]">
-        <div class=" flex justify-around items-center">
+    <footer class=" bg-[#F7F4F0] w-[100%] lg:h-[55vh] h-[65vh] mt-[100px]">
+        <div class=" lg:flex justify-around items-center">
         <div class="">
             <img src="imgs/logo.png" alt="" class=" h-[120px]">
-            <p class=" text-[15px] text-gray-500 pl-[25px]">Wararka ugu dambeeyay ee Soomaaliya iyo adduunka. Xog sax ah oo la <br> hubo.</p>
+            <p class=" lg:text-[15px] text-[12px] text-gray-500 pl-[25px]">Wararka ugu dambeeyay ee Soomaaliya iyo adduunka. Xog sax ah oo la <br> hubo.</p>
         </div>
 
-        <div class="">
+        <div class=" lg:ml-0 ml-[20px]">
             <h1 class=" font-bold mt-[30px]">Xiriirka Degdega ah</h1>
             <ul class=" mt-[10px]">
                 <li><a class=" text-gray-500 hover:text-black duration-300 ease-in-out" href="">Wararka Soomaaliya</a></li>
@@ -359,9 +385,9 @@
         </div>
 
 
-        <div class="">
+        <div class=" lg:ml-0 ml-[20px] lg:mt-0 mt-[10px]">
             <h1 class=" font-bold">Xiriir</h1>
-            <ul class=" mt-[10px]">
+            <ul class=" lg:mt-[10px] mt-[5px]">
                 <li><a class=" text-gray-500 hover:text-black duration-300 ease-in-out" href="">Newshupso@gmail.com</a></li>
                 <li><a class=" text-gray-500 hover:text-black duration-300 ease-in-out" href="">+252 61 234 5678</a></li>
                 <li><a class=" text-gray-500 hover:text-black duration-300 ease-in-out" href="">Muqdisho, Soomaaliya</a></li>
@@ -369,13 +395,67 @@
         </div>
         </div>
 
-        <div class=" flex justify-between px-[5rem] text-gray-500 mt-[50px]">
-            <p class=" text-[15px]">&copy;2025 Wararka. Dhammaan xuquuqda way dhowran yihiin.</p>
-            <ul class=" flex gap-[12px]">
+        <div class=" lg:flex justify-between px-[5rem] text-gray-500 lg:mt-[50px] mt-[70px]">
+            <p class=" lg:text-[15px] text-[17px]">&copy;2025 Wararka. Dhammaan xuquuqda way dhowran yihiin.</p>
+            <ul class=" flex lg:gap-[12px] gap-[16px] lg:mt-0 mt-[10px]">
                 <li><a href="">Sirta</a></li>
                 <li><a href="">Shuruudaha</a></li>
             </ul>
         </div>
     </footer>
+
+    <script src="java.js"></script>
+    <script>
+        const API_KEY = "011de4a2023d4009864beb4dfb57f6ea"; // API key-gaaga dhabta ah
+const NEWS_CONTAINER = document.getElementById('news-container');
+
+// Mobile menu toggle
+document.getElementById('menuBtn').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('show');
+});
+
+// Fetch news from Somalia
+async function fetchSomaliaNews() {
+    try {
+        const response = await fetch(`https://newsapi.org/v2/top-headlines?country=so&apiKey=${API_KEY}`);
+        const data = await response.json();
+
+        if (data.articles.length === 0) {
+            NEWS_CONTAINER.innerHTML = "<p class='text-gray-500 text-center col-span-full'>Warar cusub lama helin.</p>";
+            return;
+        }
+
+        displayNews(data.articles);
+    } catch (error) {
+        console.error("Error fetching news:", error);
+        NEWS_CONTAINER.innerHTML = "<p class='text-red-500 text-center col-span-full'>Wararka lama soo jiidi karo.</p>";
+    }
+}
+
+// Display news in cards
+function displayNews(articles) {
+    NEWS_CONTAINER.innerHTML = ""; // Clear previous news
+    articles.forEach(article => {
+        const card = document.createElement('div');
+        card.className = "news-card bg-white rounded-lg shadow-md overflow-hidden flex flex-col hover:shadow-xl transition-all duration-300";
+
+        card.innerHTML = `
+            <img src="${article.urlToImage || 'imgs/default-news.jpg'}" alt="${article.title}" class="h-48 w-full object-cover">
+            <div class="p-4 flex flex-col flex-1">
+                <h2 class="font-bold text-lg text-[#775831] mb-2">${article.title}</h2>
+                <p class="text-gray-600 text-sm flex-1">${article.description || ''}</p>
+                <p class="text-gray-400 text-xs mt-2">${new Date(article.publishedAt).toLocaleDateString()}</p>
+                <a href="${article.url}" target="_blank" class="mt-3 text-[#701705] font-medium hover:underline">Akhri dhamaan</a>
+            </div>
+        `;
+
+        NEWS_CONTAINER.appendChild(card);
+    });
+}
+
+// Call fetchSomaliaNews on page load
+fetchSomaliaNews();
+
+    </script>
 </body>
 </html>
